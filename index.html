@@ -104,7 +104,7 @@
     </div>
 
 
-    <b class="word">每次遇见你都心跳加速!</b>
+    <b class="word" onclick="simulateClick(49,43)">每次遇见你都心跳加速!</b>
 
 	<!-- <audio autoplay="autopaly" loop="loop" id="audios" preload="auto">
         <source src="https://music.163.com/song/media/outer/url?id=2160497488.mp3" />
@@ -132,13 +132,6 @@
 				element.dispatchEvent(evt);
 			}
 		}
-		
-		document.addEventListener("DOMContentLoaded", function() {
-			var myDiv = document.getElementById("frame");
-			myDiv.addEventListener("click", function() {
-				simulateClick(49,43)
-			});
-		});
     </script>
 </body>
 
