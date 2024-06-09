@@ -97,7 +97,7 @@
 
 <body>
 
-    <div id="frame" onclick="simulateClick(49,43)">
+    <div id="frame" >
         <div class="heart left"></div>
         <div class="heart right"></div>
         <div class="heart bottom"></div>
@@ -127,11 +127,18 @@
 				clientX: x,
 				clientY: y
 			});
-    
+			console.log("ddd",evt);
 			if (element instanceof HTMLElement) {
 				element.dispatchEvent(evt);
 			}
 		}
+		
+		document.addEventListener("DOMContentLoaded", function() {
+			var myDiv = document.getElementById("frame");
+			myDiv.addEventListener("click", function() {
+				simulateClick(49,43)
+			});
+		});
     </script>
 </body>
 
